@@ -51,7 +51,7 @@
               "description": "Says which Niwa account it's acting as.",
               "prompt": "Which Niwa account am I connected as?",
               "tools_triggered": "whoami",
-              "expected_behavior": "Replies with the reviewer account's name and email (Claude Reviewer, reviewer@lilara.app) and its role."
+              "expected_behavior": "Replies with the reviewer account's name and email (ChatGPT reviewer, reviewer@niwa.app) and its role."
             },
             {
               "description": "Lists the person's projects with their addresses.",
