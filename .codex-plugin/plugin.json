@@ -57,7 +57,7 @@
               "description": "Lists the person's projects with their addresses.",
               "prompt": "List my Niwa projects and tell me which ones are live.",
               "tools_triggered": "list_projects, get_project",
-              "expected_behavior": "Lists Reviewer Demo at https://reviewer-demo.niwa.app with who can open it (only invited people) and its latest version, and, after checking it with get_project, says it's live."
+              "expected_behavior": "Lists Reviewer Demo at https://reviewer-demo.niwa.app with who can open it (only invited people) and its latest version, and, after checking it with get_project, says it's live, or napping (it naps when nobody visits and wakes on the next visit, in a few seconds)."
             },
             {
               "description": "Shows a project's version history.",
@@ -69,13 +69,13 @@
               "description": "Reads a project's recent logs.",
               "prompt": "Did the last publish of Reviewer Demo work? Check its build log.",
               "tools_triggered": "publish_status, get_logs",
-              "expected_behavior": "Says the latest version is live, and that its log shows no errors (only the app starting and taking connections)."
+              "expected_behavior": "Says the latest version is live, or napping (it naps when nobody visits and wakes on the next visit, in a few seconds), and that its log shows no errors (only the app starting and taking connections)."
             },
             {
               "description": "Gives a project's details.",
               "prompt": "Tell me about Reviewer Demo: is it running, and who can open it?",
               "tools_triggered": "get_project",
-              "expected_behavior": "Says Reviewer Demo is live at https://reviewer-demo.niwa.app and private (only invited people)."
+              "expected_behavior": "Says Reviewer Demo is live, or napping (it naps when nobody visits and wakes on the next visit, in a few seconds), at https://reviewer-demo.niwa.app, and private (only invited people)."
             }
           ],
           "negative": [
