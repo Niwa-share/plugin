@@ -93,7 +93,7 @@
             }
           ]
         },
-        "demo_recording_url": "https://drive.google.com/file/d/1ktpC3s_J362DwJvJMf91Ywc1YbTTXXDB/view?usp=sharing"
+        "demo_recording_url": "https://home.niwa.app/videos/chatgpt-full.mp4"
       },
       "publication": {
         "release_notes": "Niwa now teaches the AI how to build for it (how_to_build_on_niwa), keeps a NIWA.md in the project's folder so later sessions know the app, and asks which project to publish to instead of guessing."
