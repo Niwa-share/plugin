@@ -1,6 +1,6 @@
 {
   "name": "niwa",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Publish the web apps you make with AI to a private niwa.app address, and look after them: versions, logs and sharing.",
   "author": {
     "name": "Mooji, Inc.",

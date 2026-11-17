@@ -11,16 +11,16 @@ Niwa puts the apps and sites you make with AI on the web, at `your-project.niwa.
 
 ## What's in the plugin
 
-- A connector to Niwa's MCP server at `https://dashboard.niwa.app/mcp`. You sign in to Niwa once (OAuth) to allow it. There is no API key to paste.
+- A connector to Niwa's MCP server at `https://mcp.niwa.app/mcp`. You sign in to Niwa once (OAuth) to allow it. There is no API key to paste.
 - One skill, `get-started`, that tells Claude or Codex how to greet you, show your projects, and publish.
 
-The plugin itself has no hooks, scripts or local programs. When you publish a project folder (in Claude Code, Codex or Cowork), your AI tool runs one command that Niwa gives it: `npx` downloads Niwa's small publishing helper from `dashboard.niwa.app`, which packs the folder, uploads it and follows the build until it's live. Where Node isn't there, it uses `tar` and `curl` instead.
+The plugin itself has no hooks, scripts or local programs. When you publish a project folder (in Claude Code, Codex or Cowork), your AI tool runs one command that Niwa gives it: `npx` downloads Niwa's small publishing helper from `mcp.niwa.app`, which packs the folder, uploads it and follows the build until it's live. Where Node isn't there, it uses `tar` and `curl` instead.
 
 Publishing from a folder also writes a `NIWA.md` file in your project, and adds a line pointing to it in its `AGENTS.md` or `CLAUDE.md` (making an `AGENTS.md` if there's neither). It tells later sessions, in any AI tool, which Niwa project this is and how the app is built. Niwa rewrites it at each publish.
 
 ## What it sends, and where
 
-The plugin talks to one service, Niwa (`dashboard.niwa.app`), as the Niwa account you signed in with. When you ask it to publish, the project's files are uploaded to Niwa so it can host them. It's told never to upload `.env` files or other secrets. Nothing is sent anywhere else.
+The plugin talks to one service, Niwa (`mcp.niwa.app`), as the Niwa account you signed in with. When you ask it to publish, the project's files are uploaded to Niwa so it can host them. It's told never to upload `.env` files or other secrets. Nothing is sent anywhere else.
 
 Niwa is a product of Mooji, Inc. See Niwa's [privacy policy](https://www.niwa.app/privacy) and [terms](https://www.niwa.app/terms).
 

@@ -2,7 +2,7 @@
   "mcpServers": {
     "niwa": {
       "type": "http",
-      "url": "https://dashboard.niwa.app/mcp"
+      "url": "https://mcp.niwa.app/mcp"
     }
   }
 }
